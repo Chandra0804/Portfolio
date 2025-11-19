@@ -1,0 +1,38 @@
+.contact-section {
+    padding: 8rem 2rem;
+    background: var(--color-bg-void);
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-text {
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.email-button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--color-primary);
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(41, 151, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.email-button:hover {
+    box-shadow: 0 15px 40px rgba(41, 151, 255, 0.5);
+    transform: translateY(-2px);
+}
