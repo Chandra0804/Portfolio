@@ -3,6 +3,7 @@ import '../styles/Navbar.css';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -16,7 +17,12 @@ const Navbar = () => {
         const element = document.getElementById(id);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
+            setMobileMenuOpen(false);
         }
+    };
+
+    const toggleMobileMenu = () => {
+        setMobileMenuOpen(!mobileMenuOpen);
     };
 
     return (
@@ -25,7 +31,14 @@ const Navbar = () => {
                 <div className="navbar-logo" onClick={() => scrollToSection('hero')}>
                     CHANDRA
                 </div>
-                <ul className="navbar-links">
+
+                <div className={`menu-icon ${mobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu}>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                </div>
+
+                <ul className={`navbar-links ${mobileMenuOpen ? 'active' : ''}`}>
                     <li onClick={() => scrollToSection('about')}>About</li>
                     <li onClick={() => scrollToSection('projects')}>Projects</li>
                     <li onClick={() => scrollToSection('contact')}>Contact</li>

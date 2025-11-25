@@ -128,3 +128,39 @@
     color: var(--color-secondary) !important;
     margin-top: 0.5rem !important;
 }
+
+@media (max-width: 768px) {
+    .experience-section {
+        padding: 6rem 1.5rem;
+    }
+
+    .timeline {
+        padding-left: 1rem;
+        border-left: none;
+    }
+
+    .timeline-item {
+        padding-left: 0;
+        margin-bottom: 3rem;
+    }
+
+    .timeline-item::before {
+        display: none;
+    }
+
+    .timeline-item::after {
+        display: none;
+    }
+
+    .timeline-content {
+        padding: 1.5rem;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+    }
+
+    .period {
+        margin-bottom: 0.5rem;
+    }
+}

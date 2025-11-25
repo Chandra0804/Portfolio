@@ -115,6 +115,14 @@
 }
 
 @media (max-width: 768px) {
+    .about-section {
+        padding: 6rem 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
     .about-content {
         grid-template-columns: 1fr;
         gap: 3rem;

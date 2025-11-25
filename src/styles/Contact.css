@@ -36,3 +36,18 @@
     box-shadow: 0 15px 40px rgba(41, 151, 255, 0.5);
     transform: translateY(-2px);
 }
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 6rem 1.5rem;
+    }
+
+    .contact-text {
+        font-size: 1rem;
+    }
+
+    .email-button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}

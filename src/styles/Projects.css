@@ -75,3 +75,18 @@
 .project-card:hover .card-glow {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 6rem 1.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+    }
+}
